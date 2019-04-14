@@ -47,19 +47,20 @@ Promise.all([d3.csv('../data/character-info.csv'), d3.csv('../data/costume-color
     // Define chart dimensions
     
     var characterSpecies = ndx.dimension(dc.pluck('Species'));
-        var characterGender = ndx.dimension(dc.pluck('Gender'));
-        var characterAlignment = ndx.dimension(dc.pluck('Alignment'));
-        var costumeColor = ndx.dimension(dc.pluck('Costume Color'));
-        var characterPower = ndx.dimension(dc.pluck('Superpower'));
-        var characterList = ndx.dimension(dc.pluck('Name'));
+        characterGender = ndx.dimension(dc.pluck('Gender'));
+        characterAlignment = ndx.dimension(dc.pluck('Alignment'));
+        costumeColor = ndx.dimension(dc.pluck('Costume Color'));
+        characterPower = ndx.dimension(dc.pluck('Superpower'));
+        characterList = ndx.dimension(dc.pluck('Name'));
         
     // Define chart groups
     
     var speciesSelection = characterSpecies.group();
         genderSelection = characterGender.group();
-        var alignmentSelection = characterAlignment.group();
-        var colorSelection = costumeColor.group();
-        var powerSelection = characterPower.group();
+        alignmentSelection = characterAlignment.group();
+        colorSelection = costumeColor.group();
+        powerSelection = characterPower.group();
+        filterBlank = remove_bins(powerSelection, 'None');
         
     // Create species row chart
     
@@ -103,7 +104,8 @@ Promise.all([d3.csv('../data/character-info.csv'), d3.csv('../data/costume-color
         .slicesCap([7])
         .dimension(costumeColor)
         .group(colorSelection)
-        .transitionDuration(500);
+        .transitionDuration(500)
+        .colors(colorScale);
         
     // Create superpower row chart
     
