@@ -1,3 +1,8 @@
 body {
     background-color: #000772;
 }
+
+.dc-data-grid {
+    color: #fff;
+    padding-bottom: 100px;
+}

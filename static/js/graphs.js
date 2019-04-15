@@ -42,7 +42,7 @@ Promise.all([d3.csv('../data/character-info.csv'), d3.csv('../data/costume-color
         alignmentChart = dc.pieChart('#alignment-selector');
         colorChart = dc.pieChart('#costume-selector');
         powerChart = dc.rowChart('#power-selector');
-        characterTable = dc.dataTable('#character-table');
+        characterTable = dc.dataGrid('#character-table');
     
     // Define chart dimensions
     
@@ -120,14 +120,19 @@ Promise.all([d3.csv('../data/character-info.csv'), d3.csv('../data/costume-color
         .fixedBarHeight(25)
         .addFilterHandler(function(filters, filter) {return [filter];});
         
-    // Create character data table
+    // Create character data grid
     
     characterTable
         .dimension(characterList)
-        .group(function(d) {
+        .section(function(d) {
             return "";
         })
-        .columns(["Name", "Strength"])
+        .htmlSection(function(d) {
+            return "<h2>Your Selection</h2>";
+        })
+        .html(function(d) {
+            return 'Name: ' + d.Name + '<br>Strength: ' + d.Strength + ' <br><img src="' + d.Image + '">';
+        })
         .endSlice(1);
         
     // Draw all charts
