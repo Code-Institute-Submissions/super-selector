@@ -22,26 +22,13 @@ Promise.all([d3.csv('../data/character-info.csv'), d3.csv('../data/costume-color
         .domain(data[1].map(row => row.Name))
         .range(data[1].map(row => row.RGB));
         
-    // Create fake group to filter null results
-    
-    function remove_bins(source_group) {
-        var bins = Array.prototype.slice.call(arguments, 1);
-        return {
-            all: function() {
-                return source_group.all().filter(function(d) {
-                    return bins.indexOf(d.key) === -1;
-                });
-            }
-        };
-    }
-    
     // Define chart types
     
     var speciesChart = dc.rowChart('#species-selector');
         genderChart = dc.pieChart('#gender-selector');
         alignmentChart = dc.pieChart('#alignment-selector');
         colorChart = dc.pieChart('#costume-selector');
-        powerChart = dc.rowChart('#power-selector');
+        powerSelection = dc.selectMenu('#power-selection');
         characterTable = dc.dataGrid('#character-table');
     
     // Define chart dimensions
@@ -50,7 +37,7 @@ Promise.all([d3.csv('../data/character-info.csv'), d3.csv('../data/costume-color
         characterGender = ndx.dimension(dc.pluck('Gender'));
         characterAlignment = ndx.dimension(dc.pluck('Alignment'));
         costumeColor = ndx.dimension(dc.pluck('Costume Color'));
-        characterPower = ndx.dimension(dc.pluck('Superpower'));
+        powerList = ndx.dimension(dc.pluck('Superpower'));
         characterList = ndx.dimension(dc.pluck('Name'));
         
     // Define chart groups
@@ -59,8 +46,7 @@ Promise.all([d3.csv('../data/character-info.csv'), d3.csv('../data/costume-color
         genderSelection = characterGender.group();
         alignmentSelection = characterAlignment.group();
         colorSelection = costumeColor.group();
-        powerSelection = characterPower.group();
-        filterBlank = remove_bins(powerSelection, 'None');
+        powerSelector = powerList.group();
         
     // Create species row chart
     
@@ -107,18 +93,12 @@ Promise.all([d3.csv('../data/character-info.csv'), d3.csv('../data/costume-color
         .transitionDuration(500)
         .colors(colorScale);
         
-    // Create superpower row chart
+    // Create superpower select menu
     
-    powerChart
-        .width(1200)
-        .height(1300)
-        .dimension(characterPower)
-        .group(powerSelection)
-        .transitionDuration(500)
-        .x(d3.scaleOrdinal())
-        .elasticX(true)
-        .fixedBarHeight(25)
-        .addFilterHandler(function(filters, filter) {return [filter];});
+    powerSelection
+        .dimension(powerList)
+        .group(powerSelector);
+        
         
     // Create character data grid
     
@@ -128,10 +108,10 @@ Promise.all([d3.csv('../data/character-info.csv'), d3.csv('../data/costume-color
             return "";
         })
         .htmlSection(function(d) {
-            return "<h2>Your Selection</h2>";
+            return "<h1>Your Selection</h1>";
         })
         .html(function(d) {
-            return 'Name: ' + d.Name + '<br>Strength: ' + d.Strength + ' <br><img src="' + d.Image + '">';
+            return '<h2>' + d.Name + '</h2>Strength: ' + d.Strength + '<br>Height: ' + d.Height + 'cm<br>Weight: ' + d.Weight + 'kg<br><img src="' + d.Image + '">';
         })
         .endSlice(1);
         
