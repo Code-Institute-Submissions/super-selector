@@ -18,35 +18,47 @@
 </head>
 <body>
     
-    <section class="container-fluid">
-        
-        <div><h1>Super Selector</h1></div>
-        
+    <section class="container-fluid intro">
+        <div class="text-center">
+            <h1>Super Selector</h1>
+                <p>Welcome to the <strong>Super Selector</strong>.</p>
+                <p>As you work through the next few pages you will be able to pick the superhuman characteristics that are most important to you.</p>
+                <p>At the end of the selector, you will find your perfect comic book character based on the selections that you make.</p>
+                <a class="btn" data-toggle="collapse" href="#first-section" role="button" aria-expanded="false" aria-controls="first-section">Click here to begin your selection</a>
+        </div>
     </section>
         
     <section class="container-fluid">
-        <div id="species-selector"></div>
+        <div class="collapse" id="first-section">
+            <div id="species-selector"></div>
+        </div>
     </section>
-    <section class="container-fluid">        
-        <div id="gender-selector"></div>
+    <section class="container-fluid">  
+        <div class="row">
+            <div id="gender-selector"></div>
+        </div>
     </section>        
-    <section class="container-fluid">        
-        <div id="alignment-selector"></div>
+    <section class="container-fluid">
+        <div class="row">     
+            <div id="alignment-selector"></div>
+        </div>
     </section>        
-    <section class="container-fluid">        
-        <div id="costume-selector"></div>
+    <section class="container-fluid">  
+        <div class="row">
+            <div id="costume-selector"></div>
+        </div>
     </section>
-    <section class="container-fluid">        
-        <div id="power-selection"></div>
+    <section class="container-fluid">
+        <div class="row">       
+            <div id="power-selection"></div>
+        </div> 
     </section> 
-    <!-- <section class="container-fluid">        
-        <div id="power-selector"></div>
-    </section>         -->
-    <section class="container-fluid">        
-        <div class="dc-data-grid" id="character-table"></div>
+    <section class="container-fluid">
+        <div class="row">     
+            <div class="dc-data-grid" id="character-table"></div>
+        </div>
     </section>
-     
-
     
+    <script type="text/javascript" src="../static/js/jquery.min.js"></script>
 </body>
 </html>
