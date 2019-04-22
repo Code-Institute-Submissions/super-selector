@@ -15,10 +15,34 @@ body {
     display: none;
 }
 
+.main-page {
+    border: 5px solid black;
+    outline: 8px solid white;
+    margin: auto;
+}
+
+
+
 h1 {
     font-family: 'Bangers', cursive;
 }
 
 p {
     font-family: 'Delius', cursive;
+}
+
+.main-title {
+    font-size: 12em;
+    color: #8e0900;
+    -webkit-text-stroke: 9px black;
+}
+
+.btn {
+    background-color: #efdb00;
+    font-family: 'Delius', cursive;
+    color: #000;
+    font-weight: bold;
+    border: 2px solid black;
+    outline: 5px solid white;
+    margin-bottom: 20px;
 }

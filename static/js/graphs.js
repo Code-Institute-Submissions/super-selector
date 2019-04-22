@@ -3,11 +3,6 @@
 Promise.all([d3.csv('../data/character-info.csv'), d3.csv('../data/costume-colors.csv')])
     .then(function(data) {
 
-        $('.choose-species').click(function() {
-            $('#character-species').removeClass('hide');
-            $('#intro').addClass('hide');
-        });
-
         // Tidy data before use
 
         data.forEach(function(d) {
@@ -116,7 +111,7 @@ Promise.all([d3.csv('../data/character-info.csv'), d3.csv('../data/costume-color
                 return "<h1>Your Selection</h1>";
             })
             .html(function(d) {
-                return '<h2>' + d.Name + '</h2>Strength: ' + d.Strength + '<br>Height: ' + d.Height + 'cm<br>Weight: ' + d.Weight + 'kg<br><img src="' + d.Image + '">';
+                return '<h2>' + d.Name + '</h2>Publisher: ' + d.Publisher + '<br>Strength: ' + d.Strength + '<br>Height: ' + d.Height + 'cm<br>Weight: ' + d.Weight + 'kg<br><img src="' + d.Image + '">';
             })
             .endSlice(1);
 
