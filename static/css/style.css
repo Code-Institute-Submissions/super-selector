@@ -1,5 +1,5 @@
 body {
-    background-color: #000772;
+    background-color: #eae8e8;
 }
 
 .dc-data-grid {
@@ -15,15 +15,7 @@ body {
     display: none;
 }
 
-.main-page {
-    border: 5px solid black;
-    outline: 8px solid white;
-    margin: auto;
-}
-
-
-
-h1 {
+h1, h2 {
     font-family: 'Bangers', cursive;
 }
 
@@ -41,8 +33,12 @@ p {
     background-color: #efdb00;
     font-family: 'Delius', cursive;
     color: #000;
-    font-weight: bold;
     border: 2px solid black;
     outline: 5px solid white;
     margin-bottom: 20px;
+}
+
+.header {
+    background: url('data:image/svg+xml;utf8,<svg width="100" height="100" transform="rotate(0)" opacity="0.5" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g  fill="%23250E17"><circle cx="25" cy="25" r="5"/><circle cx="75" cy="75" r="5"/><circle cx="75" cy="25" r="5"/><circle cx="25" cy="75" r="5"/></g></svg>'),
+    #000754;
 }

@@ -21,10 +21,13 @@
 </head>
 <body>
     
+    <section class="container-fluid text-center header">
+        <h1 class="main-title">Super Selector</h1>
+    </section>
+    
     <section class="container-fluid" id="intro">
-        <div class="col-md-offset-2 col-md-8 text-center main-page">
-            <h1 class="main-title">Super Selector</h1>
-                <p>Welcome to the <strong>Super Selector</strong>.</p>
+        <div class="text-center main-page">            
+                <h2>Welcome to the <strong>Super Selector</strong>.</h2>
                 <p>As you work through the next few pages you will be able to pick the superhuman characteristics that are most important to you.</p>
                 <p>At the end of the selector, you will find your perfect comic book character based on the selections that you make.</p>
                 <button class="btn choose-species">Click here to begin your selection</button>
@@ -70,6 +73,7 @@
         <div class="row">     
             <div class="dc-data-grid" id="character-table"></div>
         </div>
+        <a class="btn reset reset-all" href="javascript:dc.filterAll(); dc.renderAll();">Start Again</a>
     </section>
 
 </body>

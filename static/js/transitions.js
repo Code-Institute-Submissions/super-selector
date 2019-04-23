@@ -55,4 +55,13 @@ $(document).ready(function() {
         $('#character-costume').addClass('hide');
         $('#character-power').addClass('hide');
     });
+    $('.reset-all').on('click', function() {
+        $('#intro').removeClass('hide');
+        $('#character-species').addClass('hide');
+        $('#character-gender').addClass('hide');
+        $('#character-alignment').addClass('hide');
+        $('#character-costume').addClass('hide');
+        $('#character-power').addClass('hide');
+        $('#character-info').addClass('hide');
+    });
 });
