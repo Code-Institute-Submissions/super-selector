@@ -25,10 +25,11 @@
         <h1 class="main-title">Super Selector</h1>
     </section>
     
-    <section class="container-fluid" id="intro">
-        <div class="text-center main-page">            
-                <h2>Welcome to the <strong>Super Selector</strong>.</h2>
-                <p>As you work through the next few pages you will be able to pick the superhuman characteristics that are most important to you.</p>
+    <section class="container-fluid text-center" id="intro">
+        <div class="text-center main-page">
+                <p>Welcome to the <strong>Super Selector</strong></p>            
+                <p>The next few pages will present you with a number of choices, where you can pick the superhuman characteristics that are most important to you.</p>
+                <p>Whether that's the colour of their costume, the origin of their superpowers or even just whether they choose to use their abilities for good or evil.</p>
                 <p>At the end of the selector, you will find your perfect comic book character based on the selections that you make.</p>
                 <button class="btn choose-species">Click here to begin your selection</button>
         </div>
@@ -36,41 +37,46 @@
         
     <section class="container-fluid hide" id="character-species">
         <div>
+            <p>First up, a pretty straightforward one. Click on the row in the graph below that displays the species you want your character to be a member of. You can only pick one at a time, so if you change your mind before continuing then just click on a different row. When you've made your selection, click on 'Continue' to move on to the next selection.</p>
             <div id="species-selector"></div>
             <button class="btn choose-gender">Continue</button>
         </div>
     </section>
     
     <section class="container-fluid hide" id="character-gender">  
-        <div class="row">
+        <div>
+            <p>So you've selected your character's species, and taken the first step into a more super world. Next we'll take it even more simple: just click the slice of the pie chart below which contains the name of your preferred character gender, then hit 'Continue'.</p>
             <div id="gender-selector"></div>
             <button class="btn choose-alignment">Continue</button>
         </div>
     </section>       
     
     <section class="container-fluid hide" id="character-alignment">
-        <div class="row">     
+        <div>
+            <p>Now we're cooking! Next we have a fun decision: your character's alignment! Click on the slice of the pie that represents whether you want your character to be good or evil, benevolent or malevolent, a hero or a villain.</p>     
             <div id="alignment-selector"></div>
         </div>
         <button class="btn choose-costume">Continue</button>
     </section>   
     
     <section class="container-fluid hide" id="character-costume">  
-        <div class="row">
+        <div>
+            <p>That last selection got a little heavy with ethics and morality. Let's take things back to the surface level and make a decision based on pure aesthetics. Click on the slice of the pie that contains the colour of costume your ideal character would wear. If they wear a costume at all, that is!</p>
             <div id="costume-selector"></div>
         </div>
         <button class="btn choose-power">Continue</button>
     </section>
     
     <section class="container-fluid hide" id="character-power">
-        <div class="row">       
+        <div>
+            <p>Final decision time. Use the list below to select your character's superpower, then hit the 'Finish' button to see who you've ended up with!</p>       
             <div id="power-selection"></div>
         </div>
-        <button class="btn view-selection">Continue</button>
+        <button class="btn view-selection">Finish</button>
     </section> 
     
     <section class="container-fluid hide" id="character-info">
-        <div class="row">     
+        <div>     
             <div class="dc-data-grid" id="character-table"></div>
         </div>
         <a class="btn reset reset-all" href="javascript:dc.filterAll(); dc.renderAll();">Start Again</a>
