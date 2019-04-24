@@ -51,7 +51,7 @@ Promise.all([d3.csv('../data/character-info.csv'), d3.csv('../data/costume-color
         // Create species row chart
 
         speciesChart
-            .width(1200)
+            .width(800)
             .height(700)
             .dimension(characterSpecies)
             .group(speciesSelection)
@@ -111,7 +111,7 @@ Promise.all([d3.csv('../data/character-info.csv'), d3.csv('../data/costume-color
                 return "<h1>Your Selection</h1>";
             })
             .html(function(d) {
-                return '<h2>' + d.Name + '</h2>Publisher: ' + d.Publisher + '<br>Strength: ' + d.Strength + '<br>Height: ' + d.Height + 'cm<br>Weight: ' + d.Weight + 'kg<br><img src="' + d.Image + '">';
+                return '<h2>' + d.Name + '</h2>Publisher: ' + d.Publisher + '<br>Strength: ' + d.Strength + '<br>Height: ' + d.Height + 'cm<br>Weight: ' + d.Weight + 'kg<br><img src="' + d.Image + '"><br>' + d.Summary;
             })
             .endSlice(1);
 

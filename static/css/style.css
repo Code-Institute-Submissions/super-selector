@@ -24,21 +24,22 @@ p {
     font-family: 'Delius', cursive;
     color: #000;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 18px;
 }
 
 .main-title {
-    font-size: 12em;
+    font-size: 250px;
     color: #8e0900;
     -webkit-text-stroke: 9px black;
 }
 
 .btn {
     background-color: #ffcd28;
-    font-family: 'Delius', cursive;
-    font-size: 1.5em;
+    font-family: 'Bangers', cursive;
+    font-size: 40px;
     font-weight: bold;
     color: #000;
+    text-transform: uppercase;
     border: 2px solid black;
     outline: 5px solid white;
     margin-bottom: 20px;
@@ -56,4 +57,27 @@ p {
 .main-page {
     max-width: 800px;
     margin: auto;
+}
+
+.text-box {
+    background-color: #ffcd28;
+    padding: 10px;
+    border: 2px solid black;
+    outline: 5px solid white;
+    margin-bottom: 20px;
+    -moz-box-shadow: -3px 4px 4px 8px #000;
+    -webkit-box-shadow: -3px 4px 4px 8px #000;
+    box-shadow: -3px 4px 4px 8px #000;
+}
+
+
+
+
+/* Media Queries */
+
+@media (max-width: 575.98px) {
+    .main-title{
+        font-size: 70px;
+        -webkit-text-stroke: 3px black;
+    }
 }
