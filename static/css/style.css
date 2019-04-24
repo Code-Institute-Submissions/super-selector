@@ -27,6 +27,18 @@ p {
     font-size: 18px;
 }
 
+.alternate-text {
+    font-family: 'Bangers', cursive;
+    color: #000754;
+    font-weight: bold;
+    font-size: 40px;
+    -webkit-text-stroke: 0.25px white;
+}
+
+.dc-data-grid {
+    color: #000;
+}
+
 .main-title {
     font-size: 250px;
     color: #8e0900;

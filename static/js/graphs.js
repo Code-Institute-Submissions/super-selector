@@ -105,13 +105,13 @@ Promise.all([d3.csv('../data/character-info.csv'), d3.csv('../data/costume-color
         characterTable
             .dimension(characterList)
             .section(function(d) {
-                return "";
+                return '';
             })
             .htmlSection(function(d) {
-                return "<h1>Your Selection</h1>";
+                return '<p>You have selected:</p>';
             })
             .html(function(d) {
-                return '<h2>' + d.Name + '</h2>Publisher: ' + d.Publisher + '<br>Strength: ' + d.Strength + '<br>Height: ' + d.Height + 'cm<br>Weight: ' + d.Weight + 'kg<br><img src="' + d.Image + '"><br>' + d.Summary;
+                return '<h1>' + d.Name + '</h1><p>Publisher: ' + d.Publisher + '<br>Strength: ' + d.Strength + '<br>Height: ' + d.Height + 'cm<br>Weight: ' + d.Weight + 'kg</p><img class="img-fluid" src="' + d.Image + '" alt="' + d.Name + '"><br>' + '<p>' + d.Summary + '</p>';
             })
             .endSlice(1);
 

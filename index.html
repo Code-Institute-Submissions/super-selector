@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Super Selector</title>
+    <title>Super Selector | The FOMOOSH Fixer!</title>
 
     <link rel="stylesheet" href="../static/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../static/css/dc.min.css" type="text/css" />
@@ -34,15 +34,13 @@
                     <p>Comic book characters are everywhere these days, from movies and video games to action figures, backpacks and even breakfast cereals. But if you know nothing about comic books and superheroes, how can you enjoy a conversation around the water cooler or feel like you are part of the cultural zeitgeist?</p>
                 </div>
                 
-                <p>Never fear, for the Super Selector is here to cure you of your FOMOOSH (Fear Of Missing Out On Superheroes)!</p>
+                <p class="alternate-text">Never fear, for the Super Selector is here to cure you of your FOMOOSH (Fear Of Missing Out On Superheroes)!</p>
                 
                 <div class="text-box">
-                    <p>Simply click through the screens and select the superhuman characteristics that are most important to you. That could be the origin of their superpowers, whether they choose to use their abilities for good or evil, or even just which flashy colour scheme they've chosen for their spangly outfit.</p>
+                    <p>Simply click through the screens and select the superhuman characteristics that are most important to you. At the end of the Selector, you will find your perfect comic book character and then you too will be able to impress friends and colleagues with your in-depth knowledge of obscure comic book characters like the great big nerd you truly are!</p>
                 </div>
                 
-                <p>At the end of the Selector, you will find your perfect comic book character and then you too will be able to impress friends and colleagues with your in-depth knowledge of obscure comic book characters like the great big nerd you truly are!</p>
-                
-                <p>Good luck, and EXCELSIOR!</p>
+                <p class="alternate-text">Good luck, and EXCELSIOR!</p>
             
             </div>
             <button class="btn choose-species">Begin!</button>
@@ -117,10 +115,14 @@
     </section>
 
     <section class="container-fluid hide" id="character-info">
-        <div>
-            <div class="dc-data-grid" id="character-table"></div>
+        <div class="text-center main-page">
+            <div class="row">
+                <div class="dc-data-grid text-box" id="character-table"></div>
+            </div>
+            <div class="row">
+                <a class="btn reset reset-all" href="javascript:dc.filterAll(); dc.renderAll();">Start Again</a>
+            </div>
         </div>
-        <a class="btn reset reset-all" href="javascript:dc.filterAll(); dc.renderAll();">Start Again</a>
     </section>
 
 </body>
