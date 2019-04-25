@@ -10,6 +10,7 @@
     <!-- Load stylesheets -->
 
     <link rel="stylesheet" href="../static/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../static/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="../static/css/dc.min.css" type="text/css" />
     <link rel="stylesheet" href="../static/css/style.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Bangers|Delius" rel="stylesheet">
@@ -41,7 +42,7 @@
             
             <div class="row">
                 <div class="text-box">
-                    <p>Comic book characters are everywhere these days, from movies and video games to action figures, backpacks and even breakfast cereals. But if you know nothing about comic books and superheroes, how can you enjoy a conversation around the water cooler or feel like you are part of the cultural zeitgeist?</p>
+                    <p>Comic book characters are everywhere these days, from movies to breakfast cereals. But if you know nothing about superheroes, how can you feel like you are part of the cultural zeitgeist?</p>
                 </div>
             </div>
             
@@ -54,18 +55,12 @@
             
             <div class="row">
                 <div class="text-box">
-                    <p>Simply click through the screens and select the superhuman characteristics that are most important to you. At the end of the Selector, you will find your perfect comic book character and then you too will be able to impress friends and colleagues with your in-depth knowledge of obscure comic book characters like the great big nerd you truly are!</p>
+                    <p>Just click through the screens and select the characteristics that are most important to you. At the end you will find your perfect comic book character and then you too will be able to impress friends and colleagues with your in-depth knowledge of obscure comic book characters like the great big nerd you truly are!</p>
                 </div>
             </div>
             
             <div class="row">
-                <div class="text-box-alt">
-                    <p>Good luck, and Excelsior!</p>
-                </div>
-            </div>
-            
-            <div class="row">
-                <button class="btn choose-species">Begin!</button>
+                <button class="btn hvr-grow choose-species">Begin!</button>
             </div>
         
     </section>
@@ -85,7 +80,7 @@
             </div>
             
             <div class="row">
-                <button class="btn choose-gender">Continue</button>
+                <button class="btn hvr-grow choose-gender">Continue</button>
             </div>
             
     </section>
@@ -105,7 +100,7 @@
             </div>
             
             <div class="row">
-                <button class="btn choose-alignment">Continue</button>
+                <button class="btn hvr-grow choose-alignment">Continue</button>
             </div>
             
     </section>
@@ -125,7 +120,7 @@
             </div>
             
             <div class="row">
-                <button class="btn choose-costume">Continue</button>
+                <button class="btn hvr-grow choose-costume">Continue</button>
             </div>
         
     </section>
@@ -145,7 +140,7 @@
             </div>
             
             <div class="row">
-                <button class="btn choose-power">Continue</button>
+                <button class="btn hvr-grow choose-power">Continue</button>
             </div>
         
     </section>
@@ -165,7 +160,7 @@
             </div>
             
             <div class="row">
-                <button class="btn view-selection">Finish</button>
+                <button class="btn hvr-grow view-selection">Finish</button>
             </div>
         
     </section>
@@ -179,10 +174,21 @@
             </div>
             
             <div class="row">
-                <a class="btn reset reset-all" href="javascript:dc.filterAll(); dc.renderAll();">Start Again</a>
+                <a class="btn hvr-grow reset reset-all" href="javascript:dc.filterAll(); dc.renderAll();">Start Again</a>
             </div>
             
     </section>
+    
+    <!-- Footer -->
+    
+    <footer class="container-fluid">
+        
+        <div class="row">
+            <p>Dataset originally sourced from <a href="https://www.kaggle.com/claudiodavi/superhero-set#super_hero_powers.csv" target="_blank">ClaudioDavi on Kaggle</a>, with additional information from the <a href="https://marvel.fandom.com/wiki/Marvel_Database" target="_blank">Marvel Comics Database</a> and the <a href="https://dc.fandom.com/wiki/DC_Comics_Database" target="_blank">DC Comics Database</a> and original content by <a href="https://github.com/TwelvePercentHero" target="_blank">Phil Boothman</a>.</p>
+            <p>All images are copyright of Marvel Entertainment and DC Entertainment and are displayed here for educational purposes only.</p>
+        </div>
+        
+    </footer>
 
 </body>
 

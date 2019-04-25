@@ -71,6 +71,17 @@ h2 {
     margin-bottom: 20px;
 }
 
+footer {
+    background-color: #000754;
+    color: #8e0900;
+    padding: 20px;
+}
+
+footer p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .text-box {
     background-color: #ffcd28;
     font-family: 'Delius', cursive;
@@ -91,6 +102,7 @@ h2 {
 .chart-container {
     max-width: 800px;
     margin: auto;
+    font-family: 'Delius', cursive;
 }
 
 
