@@ -1,6 +1,7 @@
 /* General Styling */
 
 body {
+    background-image: url('/static/images/background-image.jpg');
     background-color: #8e0900;
 }
 
@@ -17,18 +18,21 @@ h2 {
     font-family: 'Bangers', cursive;
 }
 
-p {
-    font-family: 'Delius', cursive;
-    color: #000;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.alternate-text {
+.text-box-alt {
+    background-color: #000754;
+    padding: 10px;
+    border: 2px solid black;
+    outline: 5px solid white;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 20px;
+    -moz-box-shadow: -3px 4px 4px 8px #000;
+    -webkit-box-shadow: -3px 4px 4px 8px #000;
+    box-shadow: -3px 4px 4px 8px #000;
     font-family: 'Bangers', cursive;
-    color: #000754;
+    color: #8e0900;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .dc-data-grid {
@@ -52,6 +56,7 @@ p {
     text-transform: uppercase;
     border: 2px solid black;
     outline: 5px solid white;
+    margin: auto;
     margin-bottom: 20px;
     -moz-box-shadow: -3px 4px 4px 8px #000;
     -webkit-box-shadow: -3px 4px 4px 8px #000;
@@ -66,20 +71,26 @@ p {
     margin-bottom: 20px;
 }
 
-.main-page {
-    max-width: 800px;
-    margin: auto;
-}
-
 .text-box {
     background-color: #ffcd28;
+    font-family: 'Delius', cursive;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
     padding: 10px;
     border: 2px solid black;
     outline: 5px solid white;
+    max-width: 800px;
+    margin: auto;
     margin-bottom: 20px;
     -moz-box-shadow: -3px 4px 4px 8px #000;
     -webkit-box-shadow: -3px 4px 4px 8px #000;
     box-shadow: -3px 4px 4px 8px #000;
+}
+
+.chart-container {
+    max-width: 800px;
+    margin: auto;
 }
 
 

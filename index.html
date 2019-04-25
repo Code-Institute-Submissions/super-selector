@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Super Selector | The FOMOOSH Fixer!</title>
+    
+    <!-- Load stylesheets -->
 
     <link rel="stylesheet" href="../static/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../static/css/dc.min.css" type="text/css" />
     <link rel="stylesheet" href="../static/css/style.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Bangers|Delius" rel="stylesheet">
+    
+    <!-- Load scripts -->
 
     <script type="text/javascript" src="../static/js/jquery.min.js"></script>
     <script type="text/javascript" src="../static/js/d3.min.js"></script>
@@ -22,107 +26,162 @@
 </head>
 
 <body>
+    
+    <!-- Header Section -->
 
     <section class="container-fluid text-center header">
+        
         <h1 class="main-title">Super Selector</h1>
+        
     </section>
+    
+    <!-- Intro Section -->
 
     <section class="container-fluid text-center" id="intro">
-        <div class="text-center main-page">
+            
             <div class="row">
                 <div class="text-box">
                     <p>Comic book characters are everywhere these days, from movies and video games to action figures, backpacks and even breakfast cereals. But if you know nothing about comic books and superheroes, how can you enjoy a conversation around the water cooler or feel like you are part of the cultural zeitgeist?</p>
                 </div>
-                
-                <p class="alternate-text">Never fear, for the Super Selector is here to cure you of your FOMOOSH (Fear Of Missing Out On Superheroes)!</p>
-                
+            </div>
+            
+            <div class="row">
+                <div class="text-box-alt">
+                    <p>Never fear, for the Super Selector is here to cure you of your FOMOOSH*!</p>
+                    <p>*Fear Of Missing Out On Superheroes</p>
+                </div>
+            </div>
+            
+            <div class="row">
                 <div class="text-box">
                     <p>Simply click through the screens and select the superhuman characteristics that are most important to you. At the end of the Selector, you will find your perfect comic book character and then you too will be able to impress friends and colleagues with your in-depth knowledge of obscure comic book characters like the great big nerd you truly are!</p>
                 </div>
-                
-                <p class="alternate-text">Good luck, and EXCELSIOR!</p>
+            </div>
             
-            </div>
-            <button class="btn choose-species">Begin!</button>
-        </div>
-    </section>
-
-    <section class="container-fluid hide" id="character-species">
-        <div class="text-center main-page">
             <div class="row">
-                <div class="text-box"><p>First up, a pretty straightforward one. Click on the row in the graph below that displays the species you want your character to be a member of. You can only pick one at a time, so if you change your mind before continuing then just click on a different row. When you've made your selection, click on 'Continue' to move on to the next selection.</p></div>
-                </div>
-            <div class="row">
-                <div id="species-selector"></div>
-            </div>
-            <button class="btn choose-gender">Continue</button>
-        </div>
-    </section>
-
-    <section class="container-fluid hide" id="character-gender">
-        <div class="text-center main-page">
-            <div class="row">
-                <div class="text-box"><p>So you've selected your character's species, and taken the first step into a more super world. Next we'll take it even more simple: just click the slice of the pie chart below which contains the name of your preferred character gender, then hit 'Continue'.</p>
+                <div class="text-box-alt">
+                    <p>Good luck, and Excelsior!</p>
                 </div>
             </div>
+            
             <div class="row">
-                <div id="gender-selector"></div>
+                <button class="btn choose-species">Begin!</button>
             </div>
-            <button class="btn choose-alignment">Continue</button>
-        </div>
-    </section>
-
-    <section class="container-fluid hide" id="character-alignment">
-        <div class="text-center main-page">
-            <div class="row">
-                <div class="text-box"><p>Now we're cooking! Next we have a fun decision: your character's alignment! Click on the slice of the pie that represents whether you want your character to be good or evil, benevolent or malevolent, a hero or a villain.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div id="alignment-selector"></div>
-            </div>
-            <button class="btn choose-costume">Continue</button>
-        </div>
         
     </section>
+    
+    <!-- Species row chart -->
 
-    <section class="container-fluid hide" id="character-costume">
-        <div class="text-center main-page">
+    <section class="container-fluid hide text-center" id="character-species">
+        
             <div class="row">
-                <div class="text-box"><p>That last selection got a little heavy with ethics and morality. Let's take things back to the surface level and make a decision based on pure aesthetics. Click on the slice of the pie that contains the colour of costume your ideal character would wear. If they wear a costume at all, that is!</p>
+                <div class="text-box">
+                    <p>First up, a pretty straightforward one. Click on the row in the graph below that displays the species you want your character to be a member of. You can only pick one at a time, so if you change your mind before continuing then just click on a different row. When you've made your selection, click on 'Continue' to move on to the next selection.</p>
                 </div>
             </div>
+            
             <div class="row">
-                <div id="costume-selector"></div>
+                <div class="chart-container" id="species-selector"></div>
             </div>
-            <button class="btn choose-power">Continue</button>
-        </div>
+            
+            <div class="row">
+                <button class="btn choose-gender">Continue</button>
+            </div>
+            
+    </section>
+    
+    <!-- Gender pie chart -->
+
+    <section class="container-fluid hide text-center" id="character-gender">
+            
+            <div class="row">
+                <div class="text-box">
+                    <p>So you've selected your character's species, and taken the first step into a more super world. Next we'll take it even more simple: just click the slice of the pie chart below which contains the name of your preferred character gender, then hit 'Continue'.</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="chart-container" id="gender-selector"></div>
+            </div>
+            
+            <div class="row">
+                <button class="btn choose-alignment">Continue</button>
+            </div>
+            
+    </section>
+    
+    <!-- Alignment pie chart -->
+
+    <section class="container-fluid hide text-center" id="character-alignment">
+            
+            <div class="row">
+                <div class="text-box">
+                    <p>Now we're cooking! Next we have a fun decision: your character's alignment! Click on the slice of the pie that represents whether you want your character to be good or evil, benevolent or malevolent, a hero or a villain.</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="chart-container" id="alignment-selector"></div>
+            </div>
+            
+            <div class="row">
+                <button class="btn choose-costume">Continue</button>
+            </div>
         
     </section>
+    
+    <!-- Costume colour pie chart -->
 
-    <section class="container-fluid hide" id="character-power">
-        <div class="text-center main-page">
+    <section class="container-fluid hide text-center" id="character-costume">
+            
+            <div class="row">
+                <div class="text-box">
+                    <p>That last selection got a little heavy with ethics and morality. Let's take things back to the surface level and make a decision based on pure aesthetics. Click on the slice of the pie that contains the colour of costume your ideal character would wear. If they wear a costume at all, that is!</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="chart-container" id="costume-selector"></div>
+            </div>
+            
+            <div class="row">
+                <button class="btn choose-power">Continue</button>
+            </div>
+        
+    </section>
+    
+    <!-- Superpower selector -->
+
+    <section class="container-fluid hide text-center" id="character-power">
+        
             <div class="row">
                 <div class="text-box">
                     <p>Final decision time. Use the list below to select your character's superpower, then hit the 'Finish' button to see who you've ended up with!</p>
                 </div>
             </div>
+            
             <div class="row">
-                <div id="power-selection"></div>
+                <div class="chart-container" id="power-selection"></div>
             </div>
-            <button class="btn view-selection">Finish</button>
-        </div>
+            
+            <div class="row">
+                <button class="btn view-selection">Finish</button>
+            </div>
+        
     </section>
+    
+    <!-- Final result datagrid -->
 
-    <section class="container-fluid hide" id="character-info">
-        <div class="text-center main-page">
+    <section class="container-fluid hide text-center" id="character-info">
+            
             <div class="row">
                 <div class="dc-data-grid text-box" id="character-table"></div>
             </div>
+            
             <div class="row">
                 <a class="btn reset reset-all" href="javascript:dc.filterAll(); dc.renderAll();">Start Again</a>
             </div>
-        </div>
+            
     </section>
 
 </body>
