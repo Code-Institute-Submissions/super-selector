@@ -58,6 +58,7 @@ Promise.all([d3.csv('../data/character-info.csv'), d3.csv('../data/costume-color
             .transitionDuration(500)
             .x(d3.scaleOrdinal())
             .elasticX(true)
+            .colors(colorScale)
             .fixedBarHeight(25)
             .addFilterHandler(function(filters, filter) { return [filter]; });
 
@@ -67,6 +68,7 @@ Promise.all([d3.csv('../data/character-info.csv'), d3.csv('../data/costume-color
             .width(500)
             .height(500)
             .radius(200)
+            .colors(colorScale)
             .dimension(characterGender)
             .group(genderSelection)
             .transitionDuration(500);
@@ -77,6 +79,7 @@ Promise.all([d3.csv('../data/character-info.csv'), d3.csv('../data/costume-color
             .width(500)
             .height(500)
             .radius(200)
+            .colors(colorScale)
             .dimension(characterAlignment)
             .group(alignmentSelection)
             .transitionDuration(500);

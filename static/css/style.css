@@ -8,7 +8,7 @@ body {
 /* Text Styles */
 
 .main-title {
-    font-size: 250px;
+    font-size: 180px;
     color: #8e0900;
     -webkit-text-stroke: 9px black;
 }
@@ -16,23 +16,6 @@ body {
 h1,
 h2 {
     font-family: 'Bangers', cursive;
-}
-
-.text-box-alt {
-    background-color: #000754;
-    padding: 10px;
-    border: 2px solid black;
-    outline: 5px solid white;
-    max-width: 800px;
-    margin: auto;
-    margin-bottom: 20px;
-    -moz-box-shadow: -3px 4px 4px 8px #000;
-    -webkit-box-shadow: -3px 4px 4px 8px #000;
-    box-shadow: -3px 4px 4px 8px #000;
-    font-family: 'Bangers', cursive;
-    color: #8e0900;
-    font-weight: bold;
-    font-size: 30px;
 }
 
 .dc-data-grid {
@@ -93,7 +76,37 @@ footer p {
     outline: 5px solid white;
     max-width: 800px;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    -moz-box-shadow: -3px 4px 4px 8px #000;
+    -webkit-box-shadow: -3px 4px 4px 8px #000;
+    box-shadow: -3px 4px 4px 8px #000;
+}
+
+.text-box-alt {
+    background-color: #fff;
+    padding: 30px;
+    border: 5px solid black;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 5px;
+    font-family: 'Bangers', cursive;
+    color: #000;
+    font-weight: bold;
+    font-size: 120px;
+}
+
+.text-box-sm {
+    background-color: #f2af85;
+    font-family: 'Delius', cursive;
+    color: #000;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px;
+    border: 2px solid black;
+    outline: 5px solid white;
+    max-width: 200px;
+    margin: auto;
+    margin-bottom: 40px;
     -moz-box-shadow: -3px 4px 4px 8px #000;
     -webkit-box-shadow: -3px 4px 4px 8px #000;
     box-shadow: -3px 4px 4px 8px #000;
