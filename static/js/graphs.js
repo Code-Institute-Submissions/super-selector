@@ -71,7 +71,8 @@ Promise.all([d3.csv('../data/character-info.csv'), d3.csv('../data/costume-color
             .colors(colorScale)
             .dimension(characterGender)
             .group(genderSelection)
-            .transitionDuration(500);
+            .transitionDuration(500)
+            .addFilterHandler(function(filters, filter) { return [filter]; });
 
         // Create alignment pie chart
 
@@ -82,7 +83,8 @@ Promise.all([d3.csv('../data/character-info.csv'), d3.csv('../data/costume-color
             .colors(colorScale)
             .dimension(characterAlignment)
             .group(alignmentSelection)
-            .transitionDuration(500);
+            .transitionDuration(500)
+            .addFilterHandler(function(filters, filter) { return [filter]; });
 
         // Create costume color pie chart
 
@@ -94,7 +96,8 @@ Promise.all([d3.csv('../data/character-info.csv'), d3.csv('../data/costume-color
             .dimension(costumeColor)
             .group(colorSelection)
             .transitionDuration(500)
-            .colors(colorScale);
+            .colors(colorScale)
+            .addFilterHandler(function(filters, filter) { return [filter]; });;
 
         // Create superpower select menu
 

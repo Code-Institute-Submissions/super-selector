@@ -18,35 +18,13 @@ h2 {
     font-family: 'Bangers', cursive;
 }
 
-.dc-data-grid {
-    color: #000;
-    padding-bottom: 100px;
+footer p {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Delius', cursive;
 }
 
-
-/* Transition Classes */
-
-.hide {
-    display: none;
-}
-
-.btn {
-    background-color: #ffcd28;
-    font-family: 'Bangers', cursive;
-    font-size: 40px;
-    font-weight: bold;
-    color: #000;
-    text-transform: uppercase;
-    border: 2px solid black;
-    outline: 5px solid white;
-    margin: auto;
-    margin-bottom: 20px;
-    -moz-box-shadow: -3px 4px 4px 8px #000;
-    -webkit-box-shadow: -3px 4px 4px 8px #000;
-    box-shadow: -3px 4px 4px 8px #000;
-}
-
-/* Section Styles */
+/* Section and Box Styles */
 
 .header {
     background: url('data:image/svg+xml;utf8,<svg width="100" height="100" transform="rotate(0)" opacity="0.5" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g  fill="%23250E17"><circle cx="25" cy="25" r="5"/><circle cx="75" cy="75" r="5"/><circle cx="75" cy="25" r="5"/><circle cx="25" cy="75" r="5"/></g></svg>'),
@@ -60,9 +38,9 @@ footer {
     padding: 20px;
 }
 
-footer p {
-    padding-left: 20px;
-    padding-right: 20px;
+.dc-data-grid {
+    color: #000;
+    padding-bottom: 100px;
 }
 
 .text-box {
@@ -112,10 +90,32 @@ footer p {
     box-shadow: -3px 4px 4px 8px #000;
 }
 
+.btn {
+    background-color: #ffcd28;
+    font-family: 'Bangers', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    border: 2px solid black;
+    outline: 5px solid white;
+    margin: auto;
+    margin-bottom: 20px;
+    -moz-box-shadow: -3px 4px 4px 8px #000;
+    -webkit-box-shadow: -3px 4px 4px 8px #000;
+    box-shadow: -3px 4px 4px 8px #000;
+}
+
 .chart-container {
     max-width: 800px;
     margin: auto;
     font-family: 'Delius', cursive;
+}
+
+/* Transitions */
+
+.hide {
+    display: none;
 }
 
 
