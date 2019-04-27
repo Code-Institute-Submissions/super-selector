@@ -95,3 +95,4 @@ I used the following resources for the purposes outlined below:
 - Adding a box shadow to various elements to emulate [comic book captions](https://css-tricks.com/snippets/css/css-box-shadow/)
 - Visual style of header element and text boxes was adapted from this [CodePen example by user borntofrappe](https://codepen.io/borntofrappe/pen/GeXMgm)
 - addFilterHandler parameter details sourced from [Stack Overflow thread](https://stackoverflow.com/questions/33602608/rowchart-select-only-a-single-bar-in-dc-js-crossfilter)
+- Formatting the header title as a link to hard refresh the page sourced from [Stack Overflow thread](https://stackoverflow.com/questions/8174282/link-to-reload-current-page)

@@ -71,6 +71,9 @@ Promise.all([d3.csv('../data/character-info.csv'), d3.csv('../data/costume-color
             .colors(colorScale)
             .dimension(characterGender)
             .group(genderSelection)
+            .externalLabels(60)
+            .externalRadiusPadding(60)
+            .drawPaths(true)
             .transitionDuration(500)
             .addFilterHandler(function(filters, filter) { return [filter]; });
 
@@ -83,6 +86,10 @@ Promise.all([d3.csv('../data/character-info.csv'), d3.csv('../data/costume-color
             .colors(colorScale)
             .dimension(characterAlignment)
             .group(alignmentSelection)
+            .externalLabels(40)
+            .externalRadiusPadding(40)
+            .drawPaths(true)
+            .minAngleForLabel(0)
             .transitionDuration(500)
             .addFilterHandler(function(filters, filter) { return [filter]; });
 
@@ -96,14 +103,18 @@ Promise.all([d3.csv('../data/character-info.csv'), d3.csv('../data/costume-color
             .dimension(costumeColor)
             .group(colorSelection)
             .transitionDuration(500)
+            .externalLabels(40)
+            .externalRadiusPadding(20)
+            .drawPaths(true)
             .colors(colorScale)
-            .addFilterHandler(function(filters, filter) { return [filter]; });;
+            .addFilterHandler(function(filters, filter) { return [filter]; });
 
         // Create superpower select menu
 
         powerSelection
             .dimension(powerList)
-            .group(powerSelector);
+            .group(powerSelector)
+            .promptText('Select your superpower!');
 
 
         // Create character data grid
