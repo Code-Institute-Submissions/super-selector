@@ -65,7 +65,7 @@ I also ran the HTML and CSS through validators to ensure they were written to ac
 
 ## Deployment
 
-The site is deployed on GitHub pages directly under the master branch.
+The site is deployed on GitHub pages directly under the master branch and can be found at the following link: [https://twelvepercenthero.github.io/super-selector/](https://twelvepercenthero.github.io/super-selector/)
 
 ## Credits
 
