@@ -1,7 +1,7 @@
 /* ----General Styling---- */
 
 body {
-    background-image: url('/static/images/background-image.jpg');
+    background-image: url('../static/images/background-image.jpg');
     background-color: #8e0900;
     height: 100%;
 }
