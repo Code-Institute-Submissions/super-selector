@@ -57,13 +57,11 @@ I would also like to add an option for users to share the result of the game dir
 
 ## Testing
 
-Automated tests were created using Jasmine to ensure the buttons and section transitions worked correctly. However I created these tests after building the jQuery file where I should have used a test-first approach to writing the jQuery code. It was only after I had written the transitions.js file that I realised automated testing would be beneficial, so in future I would ensure that testing was carried out before the final code was written.
-
 Due to the nature of the dashboard and the technologies used manual testing was required for the DC.js, Crossfilter and d3.js elements. This involved a combination of self-testing using different data selections to ensure that the final results were accurate, and user testing carried out by friends and family to ensure the site behaved as expected.
 
 Google Chrome Dev Tools was used to test responsiveness across a range of devices, and the site has been tested on Microsoft Edge, Google Chrome and Mozilla Firefox to ensure compatibility.
 
-I also ran the HTML and CSS through validators to ensure they were written to accepted standards. Initially I forgot to put ‘alt’ details in the image tags but the validator highlighted this omission and I was able to fix it before deployment.
+I also ran the HTML and CSS through validators to ensure they were written to accepted standards, and the jQuery code in the 'transitions.js' file through a JavaScript linter. Initially I forgot to put ‘alt’ details in the image tags in the 'index.html' but the validator highlighted this omission and I was able to fix it before deployment.
 
 ## Deployment
 

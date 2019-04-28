@@ -214,4 +214,11 @@ footer {
     .main-title a {
         font-size: 150px;
     }
+    footer {
+        margin-top: 180px;
+    }
+    .dc-data-grid {
+        margin-bottom: 70px;
+    }
 }
+
