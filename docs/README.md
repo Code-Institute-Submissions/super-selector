@@ -8,9 +8,9 @@ My goal in the design of the website was to create a simple and functional game 
 
 I designed the site with responsiveness in mind, as although the charts do not all scale to all devices effectively, the game felt like something which would primarily be played on a mobile device rather than loading up the website on a desktop computer.
 
-A series of User Stories can be found in the [User Stories folder](/docs/user-stories.md).
+A series of User Stories can be found in the [User Stories file](/docs/user-stories.md).
 
-A set of wireframes can be found in the wireframes folder. The final design of the dashboard remained largely similar to these mockups with a few small changes based on functionality.
+A set of wireframes can be found in the [Wireframes file](/doc.Wireframes.pdf). The final design of the dashboard remained largely similar to these mockups with a few small changes based on functionality.
 
 ## Technologies
 
