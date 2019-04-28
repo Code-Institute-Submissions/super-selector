@@ -1,6 +1,6 @@
 // Load data from both csv files
 
-Promise.all([d3.csv('/data/character-info.csv'), d3.csv('/data/costume-colors.csv')])
+Promise.all([d3.csv('../data/character-info.csv'), d3.csv('../data/costume-colors.csv')])
     .then(function(data) {
 
         // Tidy data before use
