@@ -10,7 +10,7 @@ I designed the site with responsiveness in mind, as although the charts do not a
 
 A series of User Stories can be found in the [User Stories file](/docs/user-stories.md).
 
-A set of wireframes can be found in the [Wireframes file](/doc.Wireframes.pdf). The final design of the dashboard remained largely similar to these mockups with a few small changes based on functionality.
+A set of wireframes can be found in the [Wireframes file](/docs/Wireframes.pdf). The final design of the dashboard remained largely similar to these mockups with a few small changes based on functionality.
 
 ## Technologies
 
