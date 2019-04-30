@@ -65,7 +65,9 @@ I also ran the HTML and CSS through validators to ensure they were written to ac
 
 ## Deployment
 
-The site is deployed on GitHub pages directly under the master branch and can be found at the following link: [https://twelvepercenthero.github.io/super-selector/](https://twelvepercenthero.github.io/super-selector/)
+The site is deployed on GitHub pages directly under the master branch and can be found at the following link: [https://twelvepercenthero.github.io/super-selector/](https://twelvepercenthero.github.io/super-selector/).
+
+To run locally, you can clone this repository directly into the editor of your choice by pasting `git clone https://github.com/TwelvePercentHero/super-selector.git` into your terminal. To cut ties with this GitHub repository, type `git remote rm origin` into the terminal.
 
 ## Credits
 
